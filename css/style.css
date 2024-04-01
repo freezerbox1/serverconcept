@@ -23,7 +23,7 @@ p {
 }
 
 #main-nav a {
-    color: #f5f5f5;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 10px;
     display: block;
@@ -135,8 +135,6 @@ td{
 }
 
 
-
-
 #moving:hover {
     transform: scale(1.2, 0)
 }
@@ -190,6 +188,17 @@ td{
     text-shadow: #05161a 1px 30px 1;
 }
 
+.littletitle {
+    overflow-x:hidden;
+    font-family: Bahnschrift;
+    font-size: 30px;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(92deg, #2a8aaa 0%, #97c01b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .titleleft {
     overflow-x: hidden;
     font-family: Bahnschrift;
@@ -224,8 +233,6 @@ h5 {
     padding-top: 100px;
     text-align: center;
     margin: auto;
-    background-size: cover;
-    background-position: center;
     font-family: "Bahnschrift", monospace;
     color:#f5f5f5;
     background-size: 40px 40px;    
