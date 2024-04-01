@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    background-color: #05161a;
+    background-color: #080f10;
 }
 
 p {
@@ -13,7 +13,7 @@ p {
 }
 
 #main-nav {
-    background-color: #09292f;
+    background-color: #4b3568;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -38,6 +38,7 @@ p {
     transform: scale(1.05)
 }
 
+
 #logo {
 
     width: 600px;
@@ -45,7 +46,7 @@ p {
 }
 
 #header {
-    background-image: url(../images/baguettesnuke.png);
+    background-image: url(../images/slca.gif);
     height:370px;
     padding-top: 100px;
     text-align: center;
@@ -181,7 +182,7 @@ td{
     font-size: 90px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-image: -webkit-linear-gradient(92deg, #2a8aaa 0%, #97c01b 100%);
+    background-image: -webkit-linear-gradient(92deg, #833acb 0%, #90e2dc 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -302,3 +303,4 @@ button:hover, button:hover::before {
     --m: 2rem;
   }
 }
+
