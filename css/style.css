@@ -50,10 +50,9 @@ p {
     padding-top: 100px;
     text-align: center;
     margin: auto;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
-    font-family: "Bahnschrift", monospace;
-    color:#f5f5f5;
+    background-repeat: no-repeat; 
 }
 
 #pcset {
