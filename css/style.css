@@ -17,8 +17,12 @@ p {
     margin: 0;
     padding: 0;
     text-align: right;
-    width: 100%;    
+    width: 100%;
     color:#f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #main-nav a {
@@ -26,15 +30,36 @@ p {
     text-decoration: none;
     padding: 10px 10px;
     display: block;
+    transition: transform .3s ease-in-out;
+}
+
+.down {
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    font-family: "Bahnschrift", monospace;
+    display: inline;
+    width: 100px;
+    margin-top:50px;
+    position: sticky;
+}
+
+h4{
+    font-size: 26px;
+    text-align: left;
+    margin: auto;
+    font-family: "Helvetica", monospace;
+    color:#ffffff;
+    
 }
 
 #main-nav li {
     display: inline-block;
+    
 }
 
 #main-nav a:hover {
     background-color: rgba(0,0,0,0.1);
-    transform: scale(1.05)
+    transform: scale(1.1)
 }
 
 
@@ -46,27 +71,18 @@ p {
 
 #header {
     background-image: url(../images/slca.gif);
-    height:370px;
-    padding-top: 100px;
+    height:600px;
     text-align: center;
     margin: auto;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat; 
-}
-
-#pcset {
-    background-image:url(../images/pcsetup.png);
-    height: 450px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    font-family: "Bahnschrift", monospace;
+    padding-bottom:70px;
 }
 
 
 h2 {
-    font-size: 36px;
+    font-size: 66px;
     text-align: center;
     margin: auto;
     font-family: "Calibri", monospace;
@@ -100,6 +116,12 @@ ul {
     color:#f5f5f5;
 }
 
+li {
+    font-size: 36px;
+    text-align: center;
+    font-family: "Bahnschrift", monospace;
+    color:#f5f5f5;
+}
 .subtitle {
     font-size: 20px;
     text-align: center;
@@ -114,6 +136,7 @@ table, th, td {
 table {
   border-collapse: collapse;
 }
+
 th {
     background-color: rgba(0,0,0,0.8);
     color: #fff;
@@ -123,26 +146,8 @@ td{
     color:#f5f5f5;
 }
 
-#moving {
-    transition: 0.5s;
-    position: fixed;
-    bottom:1px;
-}
-
-#moving:hover {
-    transform: scale(1.2, 0)
-}
 
 
-#moving:hover {
-    transform: scale(1.2, 0)
-}
-
-.contact_logo {
-    height: auto;
-    width: 160px;
-
-}
 
 .contacts {
     text-align: center;
@@ -163,10 +168,12 @@ td{
 .logo {
     width: 124px;
     height: auto;
-    transition: transform .7s ease-in-out;
+    transition: transform .5s ease-in-out;
+    margin-top:60px;
+    margin-bottom:60px;
 }
-.contact:hover .logo {
-    transform: scale(1.1);
+.logo:hover {
+    transform: scale(1.5);
 }
 
 .heading:hover {
@@ -180,7 +187,7 @@ td{
     font-size: 90px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-image: -webkit-linear-gradient(92deg, #833acb 0%, #90e2dc 100%);
+    background-image: -webkit-linear-gradient(#06d1ca 0%, #8ad558 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -192,7 +199,7 @@ td{
     font-family: Bahnschrift;
     font-size: 30px;
     font-weight: bold;
-    background-image: -webkit-linear-gradient(92deg, #833acb 0%, #90e2dc 100%);
+    background-image: -webkit-linear-gradient(92deg, #06d1ca 0%, #8ad558 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -204,7 +211,7 @@ td{
     font-size: 30px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-image: -webkit-linear-gradient(92deg, #833acb 0%, #90e2dc 100%);
+    background-image: -webkit-linear-gradient(92deg, #06d1ca 0%, #8ad558 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -236,22 +243,10 @@ h5 {
     color:#f5f5f5;
     background-size: 40px 40px;    
     background-size: 40px 40px;    
-    background-image: repeating-linear-gradient(deg, #fff, #fff 1px, transparent 1px, transparent 40px),repeating-linear-gradient(-90deg, #fff, #fff 1px, transparent 1px, transparent 40px)
+
 }
 
-:root {
-/*  change this for scaling  */
-  --m: 4rem;
-  
-  --red: #FF6565;
-  --pink: #FF64F9;
-  --purple: #6B5FFF;
-  --blue: #4D8AFF;
-  --green: #5BFF89;
-  --yellow: #FFEE55;
-  --orange: #FF6D1B;
-  
-}
+
 
 button {
   border: calc(0.08 * var(--m)) solid transparent;
