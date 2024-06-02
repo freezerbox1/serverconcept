@@ -12,6 +12,36 @@ p {
     
 }
 
+h5 {
+    background-color: #f8ce4b;
+    animation: bgColor 5s infinite linear;
+    margin:0;
+    padding:0.5em;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Bahnschrift", monospace;
+
+}
+
+@keyframes bgColor {
+    0% {
+      background-color: #e63333;
+    }
+    25% {
+      background-color: #e97e27;
+    }
+    50% {
+      background-color: #d8d811;
+    }
+    75% {
+      background-color: #e97e27;
+    }
+    100% {
+      background-color: #e63333;
+    }
+  }
+
 #main-nav {
     background-color: #4b3568;
     margin: 0;
@@ -19,6 +49,7 @@ p {
     text-align: right;
     width: 100%;
     color:#f5f5f5;
+
 }
 
 html {
@@ -28,7 +59,7 @@ html {
 #main-nav a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 5px;
     display: block;
     transition: transform .3s ease-in-out;
 }
@@ -69,19 +100,20 @@ h4{
     margin-top: 240px;
 }
 
-#header {
-    background-image: url(../images/slca.gif);
-    height:600px;
+#header { /* banner */
+    background-image: url(/images/slca.gif);
+    width:100%;
     text-align: center;
     margin: auto;
-    background-size: 100%;
+    background-size: 120em 70em;
     background-position: center;
     background-repeat: no-repeat; 
-    padding-bottom:70px;
+    padding-bottom:30em;
 }
 
 
 h2 {
+    padding-top:1em;
     font-size: 66px;
     text-align: center;
     margin: auto;
@@ -194,16 +226,7 @@ td{
     text-shadow: #05161a 1px 30px 1;
 }
 
-.littletitle {
-    overflow-x:hidden;
-    font-family: Bahnschrift;
-    font-size: 30px;
-    font-weight: bold;
-    background-image: -webkit-linear-gradient(92deg, #06d1ca 0%, #8ad558 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .titleleft {
     overflow-x: hidden;
@@ -228,72 +251,24 @@ a:visited {
     opacity:0;
    }
 
-h5 {
-    font-size:20px;
-}
 
-#difheader {
-    background-image: url(../images/frzbxbackgrou.png);
-    background-color: #09292f76;
-    height:470px;
-    padding-top: 100px;
-    text-align: center;
-    margin: auto;
-    font-family: "Bahnschrift", monospace;
-    color:#f5f5f5;
-    background-size: 40px 40px;    
-    background-size: 40px 40px;    
-
-}
-
-
-
-button {
-  border: calc(0.08 * var(--m)) solid transparent;
-  position: relative;
-  color: #F3F3F3;
-  font-size: 30px;
-  border-radius: calc(0.7 * var(--m));
-  padding: 30px;
-  display: flex;
-  font-family: Bahnschrift;
-  text-align: center;
-  margin:auto;
-  justify-content: center;
-  cursor: pointer;
+.parallax {
+    /* The image used */
+    background-image: url("/images/slca2.gif");
   
-  background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
-  background-origin: border-box;
-  background-clip: padding-box, border-box, border-box;
-  background-size: 200%;
-  animation: animate 2s infinite linear;
-}
-
-button::before {
-  content: '';
-  background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
-  height: 30%;
-  width: 60%;
-  position: absolute;
-  bottom: -20%;
-  z-index: -5;
-  background-size: 200%;
-  animation: animate 2s infinite linear;
-  filter: blur(calc(0.8 * var(--m)));
-}
-
-button:hover, button:hover::before {
-  animation: animate 0.5s infinite linear;
-}
-
-@keyframes animate {
-  0% {background-position: 0}
-  100% {background-position: 200%}
-}
-
-@media screen and (max-width: 1000px) {
-  :root {
-    --m: 2rem;
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-}
 
+ol {
+    padding-left: 15%;
+    padding-right:5%;
+    text-align:left;
+
+}
