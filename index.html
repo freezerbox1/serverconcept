@@ -14,18 +14,37 @@
 
 <body>
 
-    <ul id=main-nav>
+<!---    <ul id=main-nav>
+        
         <li><a href=rules.html>Rules</a></li>
         <li><a href=plugins.html>Plugin List</a></li>
         <li><a href=appeal.html>Ban Appeal</a></li>
         <li><a href=contact.html>Contact</a></li>
-        <h5 id="status">Případný status report. (Nedostupný server, aj.)</h5>
+         --->
+         <div class="off-screen-menu">
+            <ul>
+              <li><a href=rules.html>Pravidla</a></li>
+              <li><a href=appeal.html>Ban Appeal</a></li>
+              <li><a href=contact.html>Contact</a></li>
+            </ul>
+          </div>
+      
+          <nav>
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+      
+          <script src="./app.js"></script>
+        <h5 id="status">Servery jsou funkční. Průměrný ping: 15ms</h5>
 
     </ul>
     <div id=header>
         <div>
-            <img class="logo" src="./images/vorb.png" alt="RULES">
-            <h1 class="maintitle"><a href="home.html"> > Vorb < </a></h1>
+             <img class="logo" src="./images/vorb.png" alt="RULES"> 
+            <h1 class="maintitle"><a href="index.html"> > Vorb < </a></h1>
             <a href="#disbanner"><img class="down" src="images/down.png"></img></a>
         </div>
     </div>
@@ -33,15 +52,29 @@
     <br><br><br><br>
     <div id="disbanner">
         <iframe align="left" style="padding-left:10%; padding-bottom:2em; padding-right:2em;" src="https://ptb.discord.com/widget?id=1207432216922034226&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <h4 style="padding-right:2em;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sapien. Aliquam erat volutpat. Nulla quis diam. Etiam egestas wisi a erat.</h4>
+        <h4 style="padding-right:2em; font-size:37px">Co je Vorb?</h4>
+        <h4 style="padding-right:2em;"><br>Vorb je vanilla server, jehož cílem je poskytnout autentický herní zážitek bez pluginů, které by narušovaly zábavu ze hry.</h4>
+        <h4 style="padding-right:2em; font-size:37px"><br>Proč vznikl?</h4>
+        <h4 style="padding-right:2em;"><br>Tento server jsme vytvořili, protože většina ostatních serverů na československé scéně je příliš modifikovaná. Chtěli jsme jednoduchý a čistý zážitek ze hry, přesně takový, jaký zamýšleli vývojáři.</h4>
+        <h4 style="padding-right:2em; font-size:37px"><br>Atropol Hosting</h4>
+        <h4 style="padding-right:2em;"><br>Naše servery poskytuje <a href="https://atropol.eu/">Atropol hosting</a></h4>
+
+        
+
             <div class="github contact">
-                <a target="" rel="noopener noreferrer" href="rules.html">
+                <a target="_blank" rel="noopener noreferrer" href="https://atropol.eu/">
+                    <img class="logo" style="width: 200px; padding-bottom:2em" src="https://atropol.eu/images/logo.png" alt="Hosting provider">
+                </a>
+            </div>
+
+            <div class="github contact">
+                <a target="_blank" rel="noopener noreferrer" href="rules.html">
                     <img class="logo" src="./images/rules.png" alt="RULES">
                 </a>
             </div>
     
             <div class="discord contact">
-                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/scpsl">
+                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/eAPYCdfDMZl">
                     <img class="logo" src="./images/discord.png" alt="discord invite">
  
                 </div>
